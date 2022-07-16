@@ -54,6 +54,18 @@ public class LoanCalculatorController {
 		
 		return new ModelAndView("requestAccepted");
 	} 
-	
-	
+
+	//the following methods are used purely for test purpose
+
+	public void setData(LoanRepository data) {
+		this.data = data;
+	}
+
+	public void setMailSender(JavaMailSender mailSender) {
+		this.mailSender = mailSender;
+	}
+
+	public void setRestTemplate(RestTemplate restTemplate) {
+		this.restTemplate = restTemplate;
+	}
 }
